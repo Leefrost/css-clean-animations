@@ -199,7 +199,7 @@ body {
     text-decoration: none;
     overflow: hidden;
     transition: 1s all ease;
-    color:#255784;
+    color: #255784;
 }
 
 .linear a::before {
@@ -235,7 +235,7 @@ body {
 .linear .btn3::before {
     width: 100%;
     height: 0;
-    transform: translate(-50%,-50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .linear .btn3:hover::before {
@@ -245,9 +245,72 @@ body {
 .linear .btn4::before {
     width: 100%;
     height: 0;
-    transform: translate(-50%,-50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .linear .btn4:hover::before {
     height: 400%;
 }
+
+/* wave */
+
+.wave a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 1s;
+    color: #2196f3;
+}
+
+.wave a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #2196f3;
+    z-index: -1;
+    transition: 1s;
+}
+
+.wave .btn1, .wave .btn2 {
+    color: #2196f3
+}
+
+.wave .btn1:hover, .wave .btn2:hover {
+    color: #255784
+}
+
+.wave .btn1::before, .wave .btn3::before {
+    top:0;
+    border-radius: 0 0 50% 50%;
+}
+
+.wave .btn1:hover::before, .wave .btn2:hover::before {
+    height: 180%;
+}
+
+.wave .btn3, .wave .btn4 {
+    color: #255784
+}
+
+.wave .btn3:hover, .wave .btn4:hover {
+    color: #2196f3
+}
+
+.wave .btn2::before, .wave .btn4::before {
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+.wave .btn3::before, .wave .btn4::before {
+    height: 180%;
+}
+
+.wave .btn3:hover::before, .wave .btn4:hover::before {
+    height: 0%;
+} 
