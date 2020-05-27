@@ -1,5 +1,5 @@
 <div align="center">
-![Rabbit](artifacts/rabbit.svg)
+    <img src="/artifacts/rabbit.png" alt="Rabbit" align="center">
 </div>
 <big>
   <h1 align="center">Magic CSS3</h1>
@@ -24,6 +24,8 @@
 
 ## About
 A couple animation tricks for buttons. Will be expanded in future in a small prensentational sandbox. [Demo page.](https://leefrost.github.io/css-clean-animations/)
+
+
 
 ## Using
 * Clone project
